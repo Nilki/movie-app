@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/bangers</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/carter_one</item>
+        <item>@font/combo</item>
+        <item>@font/finger_paint</item>
+        <item>@font/nova_oval</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

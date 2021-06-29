@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".RegisterMovie">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="315dp"
+        android:layout_height="412dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463">
+
+        <EditText
+            android:id="@+id/title_of_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/title_of_the_movie"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6AFFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/the_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/year"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6BFFFFFF"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/director"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6BFFFFFF"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/actor_actresses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/actors_actresess"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6BFFFFFF"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/rating"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6BFFFFFF"
+            tools:ignore="RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="40dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:fontFamily="@font/carter_one"
+            android:gravity="left"
+            android:hint="@string/review"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6BFFFFFF"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="131dp"
+        android:layout_height="79dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/carter_one"
+        android:onClick="saveMovies"
+        android:text="@string/save_btn"
+        android:textSize="24sp"
+        app:backgroundTint="#72FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_layout"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <ImageView
+        android:id="@+id/search_img"
+        android:layout_width="185dp"
+        android:layout_height="125dp"
+        android:contentDescription="@string/reg_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,414 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_two_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/editmov" />
+
+    <LinearLayout
+        android:id="@+id/rating_layout"
+        android:layout_width="245dp"
+        android:layout_height="26dp"
+        android:background="#81000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/rate_movie"
+        app:layout_constraintTop_toBottomOf="@+id/review_db"
+        app:layout_constraintVertical_bias="0.051">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_bttn"
+        android:layout_width="137dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:onClick="Update"
+        android:text="Update"
+        android:textSize="14sp"
+        app:backgroundTint="#6800BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/Title_movie"
+        android:layout_width="39dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/title_db"
+        android:layout_width="269dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center|left"
+        android:textColor="#BA00BCD4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/year_db"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_movie"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/year_movie"
+        android:layout_width="39dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Year"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toEndOf="@+id/Title_movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <TextView
+        android:id="@+id/year_db"
+        android:layout_width="73dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center|right"
+        android:textColor="#BA00BCD4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_movie"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <TextView
+        android:id="@+id/director_movie"
+        android:layout_width="66dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Director"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_movie"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/director_db"
+        android:layout_width="247dp"
+        android:layout_height="24dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textColor="#7099AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/director_movie"
+        app:layout_constraintTop_toBottomOf="@+id/year_db"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/actors_movie"
+        android:layout_width="35dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Cast"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/director_movie"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/actors_db"
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textColor="#7099AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toEndOf="@+id/actors_movie"
+        app:layout_constraintTop_toBottomOf="@+id/director_db"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/review_movie"
+        android:layout_width="53dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Review"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actors_movie"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/review_db"
+        android:layout_width="247dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textColor="#7099AC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/review_movie"
+        app:layout_constraintTop_toBottomOf="@+id/actors_db"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/rate_movie"
+        android:layout_width="53dp"
+        android:layout_height="26dp"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:text="Rating"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_movie"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="343dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_layout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ScrollView
+            android:id="@+id/scroll_editV"
+            android:layout_width="309dp"
+            android:layout_height="204dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edit_n_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:text="@string/edit_and_update_movie_a"
+                    android:textColor="#BA00BCD4"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/Title_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:hint="Title"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CABCBC"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/year_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:hint="Year"
+                    android:inputType="number|textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CABCBC"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Director_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:hint="Director"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CABCBC"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/Actor_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:hint="Actors/Actresses"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CABCBC"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/review_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints=""
+                    android:backgroundTint="@color/white"
+                    android:ems="10"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:hint="Review"
+                    android:inputType="textPersonName"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CABCBC"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rate_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/carter_one"
+                    android:gravity="center"
+                    android:text="Drop Your Rate"
+                    android:textColor="#FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/update_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+                <RadioGroup
+                    android:id="@+id/fav_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/radio_fav"
+                        android:layout_width="271dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/carter_one"
+                        android:gravity="center"
+                        android:text="@string/favourite_radio"
+                        android:textColor="#FFFFFF"
+                        app:buttonTint="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/radio_notfav"
+                        android:layout_width="271dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:checked="false"
+                        android:fontFamily="@font/carter_one"
+                        android:gravity="center"
+                        android:text="@string/not_favourite_radio"
+                        android:textColor="#FFFFFF" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/editmov" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/editmov" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

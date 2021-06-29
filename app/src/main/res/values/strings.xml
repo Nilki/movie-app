@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name"> MOVIES </string>
+    <string name="register_movie_btn">Register Movie</string>
+    <string name="display_movies_btn">Display Movies</string>
+    <string name="favourites_btn">favourites</string>
+    <string name="edit_movies_btn">Edit Movies</string>
+    <string name="rating_btn">Rating</string>
+    <string name="search_btn">search</string>
+    <string name="title_of_the_movie">Title of the Movie</string>
+    <string name="year">The Year</string>
+    <string name="director">The Director</string>
+    <string name="actors_actresess">Actors / Actresess</string>
+    <string name="rating">Rating</string>
+    <string name="review">Review</string>
+    <string name="save_btn">Save</string>
+    <string name="reg_img">reg_img</string>
+    <string name="add_to_favourites">Add to Favourites</string>
+    <string name="save">Save</string>
+    <string name="search_movie">Search Movie</string>
+    <string name="lookup_btn_srch">Lookup</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="update_btn">Update</string>
+    <string name="edit_and_update_movies">Edit And Update Movies</string>
+    <string name="title_updateone">Title</string>
+    <string name="year_updateone">Year</string>
+    <string name="director_updateone">Director</string>
+    <string name="actors_and_actresses_updateone">Actors And Actresses</string>
+    <string name="review_updateone">Review</string>
+    <string name="drop_your_rate_updateone">Drop Your Rate</string>
+    <string name="edit_and_update_movie_a">Edit And Update Movie</string>
+    <string name="favourite_radio">Favourite</string>
+    <string name="not_favourite_radio">Not - Favourite</string>
+    <string name="ratting_text">Ratting</string>
+    <string name="find_movie_in_imdb">Find Movie in IMDB</string>
+
+
+</resources>
